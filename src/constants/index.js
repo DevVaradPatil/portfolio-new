@@ -16,7 +16,8 @@ import {
     gericht,
     threejs,
     freelancer,
-    bblogo
+    bblogo,
+    plantsnap
   } from "../assets";
   
   export const navLinks = [
@@ -169,6 +170,27 @@ import {
   ];
   
   const projects = [
+    {
+      name: "PlantSnap",
+      description:
+        "Your ultimate plant identification companion! Simply snap a photo of any plant, and let us instantly identify it for you. Explore the fascinating world of flora at your fingertips.",
+      tags: [
+        {
+          name: "react",
+          color: "white-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "API",
+          color: "green-text-gradient",
+        },
+      ],
+      image: plantsnap,
+      source_code_link: "https://plantsnap.web.app/",
+    },
     {
       name: "Gericht Restaurant",
       description:

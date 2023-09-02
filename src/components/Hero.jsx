@@ -6,7 +6,7 @@ import { fadeIn, textVariant } from '../utils/motion'
 
 const Hero = () => {
   return (
-    <section className='relative w-full h-screen mx-auto'>
+    <section className='relative w-full h-screen mx-auto max-w-[1300px]'>
       <div className={`${styles.paddingX} sm:flex-row top-[100px] max-w-7xl mx-auto flex flex-col items-start gap-5 absolute inset-0`}>
         <div className='flex flex-row mx-auto items-start gap-3'>
         <motion.div
