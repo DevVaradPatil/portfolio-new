@@ -17,7 +17,8 @@ import {
     threejs,
     freelancer,
     bblogo,
-    plantsnap
+    plantsnap,
+    organizify
   } from "../assets";
   
   export const navLinks = [
@@ -170,6 +171,27 @@ import {
   ];
   
   const projects = [
+    {
+      name: "Organizify",
+      description:
+        "Your all-in-one task organizer powered by Next.js and OpenAI. Experience seamless task management with drag-and-drop ease, and enjoy quick summaries of your to-dos.",
+      tags: [
+        {
+          name: "nextjs",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "appwrite",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "clerk",
+          color: "white-text-gradient",
+        },
+      ],
+      image: organizify,
+      source_code_link: "https://organizify-devvaradpatil.vercel.app/",
+    },
     {
       name: "PlantSnap",
       description:
