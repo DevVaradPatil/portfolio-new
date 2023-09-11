@@ -190,7 +190,7 @@ import {
         },
       ],
       image: organizify,
-      source_code_link: "https://organizify-devvaradpatil.vercel.app/",
+      source_code_link: "https://organizify-by-varad-ass8e66kb-devvaradpatil.vercel.app/",
     },
     {
       name: "PlantSnap",
