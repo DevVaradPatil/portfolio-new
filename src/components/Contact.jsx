@@ -100,7 +100,7 @@ const Contact = () => {
               className="bg-white py-4 px-6 placeholder:text-secondary text-black rounded-lg outlined-none border-none font-medium"
             /> 
           </label>
-          <button type="submit" className="bg-white w-[40%] py-3 px-8 otuline-none text-theme text-[20px] font-bold shadow-md shadow-primary rounded-xl hover:bg-primary hover:text-white transition" >
+          <button type="submit" className="bg-white w-full md:w-[40%] py-3 px-8 otuline-none text-theme text-[20px] font-bold shadow-md shadow-primary rounded-xl hover:bg-primary hover:text-white transition" >
             {loading ? 'Sending...' : 'SEND'}
           </button>
         </form>

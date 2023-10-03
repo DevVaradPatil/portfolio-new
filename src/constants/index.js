@@ -18,7 +18,8 @@ import {
     freelancer,
     bblogo,
     plantsnap,
-    organizify
+    organizify,
+    snikrz
   } from "../assets";
   
   export const navLinks = [
@@ -171,6 +172,27 @@ import {
   ];
   
   const projects = [
+    {
+      name: "Snikrz",
+      description:
+        "Ultimate sneaker shopping destination with our MERN-based full-stack e-commerce website, offering a seamless blend of style and technology for all your footwear needs.",
+      tags: [
+        {
+          name: "MERN",
+          color: "white-text-gradient",
+        },
+        {
+          name: "MongoDB",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "Stripe",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: snikrz,
+      source_code_link: "http://snikrz.web.app/",
+    },
     {
       name: "Organizify",
       description:

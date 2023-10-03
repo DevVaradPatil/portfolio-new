@@ -25,6 +25,7 @@ import gericht from "./gericht.png";
 import nalanda from "./nalanda.png";
 import plantsnap from './plantsnap.png'
 import organizify from './organizify.png'
+import snikrz from './snikrz.png'
 
 import hero from './creator.svg'
 
@@ -55,5 +56,6 @@ export {
   freelancer,
   bblogo,
   plantsnap,
-  organizify
+  organizify,
+  snikrz
 };
