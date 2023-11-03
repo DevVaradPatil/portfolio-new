@@ -34,7 +34,7 @@ const Navbar = () => {
           {/* <img src={logo} alt="logo" className="w-[50px] object-contain" /> */}
           <h2 className="text-black font-semibold text-[30px]">[V]</h2>
           <p className="text-black text-[18px] font-bold cursor-pointer flex">
-            Varad &nbsp; <span className="sm:block hidden"><span className="text-theme">|</span> Web Devloper</span>
+            Varad &nbsp; <span className="sm:block hidden"><span className="text-theme">|</span> Web Developer</span>
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">

@@ -26,6 +26,7 @@ import nalanda from "./nalanda.png";
 import plantsnap from './plantsnap.png'
 import organizify from './organizify.png'
 import snikrz from './snikrz.png'
+import threads from './threads.png'
 
 import hero from './creator.svg'
 
@@ -57,5 +58,6 @@ export {
   bblogo,
   plantsnap,
   organizify,
-  snikrz
+  snikrz,
+  threads
 };

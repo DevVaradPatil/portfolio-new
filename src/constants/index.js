@@ -19,7 +19,8 @@ import {
     bblogo,
     plantsnap,
     organizify,
-    snikrz
+    snikrz,
+    threads
   } from "../assets";
   
   export const navLinks = [
@@ -194,6 +195,27 @@ import {
       source_code_link: "http://snikrz.web.app/",
     },
     {
+      name: "Threads",
+      description:
+        "Threads your new social media hub! A dynamic full stack web platform for sharing ideas and connecting white like-minded individuals and stay productive",
+      tags: [
+        {
+          name: "nextjs",
+          color: "white-text-gradient",
+        },
+        {
+          name: "MongoDB",
+          color: "green-text-gradient",
+        },
+        {
+          name: "clerk",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: threads,
+      source_code_link: "https://threads-app-sooty.vercel.app/",
+    },
+    {
       name: "Organizify",
       description:
         "Your all-in-one task organizer powered by Next.js and OpenAI. Experience seamless task management with drag-and-drop ease, and enjoy quick summaries of your to-dos.",
@@ -276,27 +298,6 @@ import {
       ],
       image: bb,
       source_code_link: "https://bubblebyte.in/",
-    },
-    {
-      name: "Nalanda Pre-school",
-      description:
-        "A detailed Pre-school website for Naland Pre-school which has various different functionalities including a live chatbot. It is based on ReactJS",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "black-text-gradient",
-        },
-        {
-          name: "css",
-          color: "orange-text-gradient",
-        },
-      ],
-      image: nalanda,
-      source_code_link: "https://nalandainfo.com/",
     },
   ];
   
