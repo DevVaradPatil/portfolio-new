@@ -7,12 +7,16 @@ import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 import { technologies } from "../constants";
 import { Tilt } from "react-tilt";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { PrevArrow , NextArrow } from "./Arrows"
 
 const SkillCard = ({ index, name, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full p-[35px]">
       <motion.div
-        variants={fadeIn("right", "spring", (0.2*index)% 4, 0.75)}
+        variants={fadeIn("right", "spring", (0.2 * index) % 4, 0.75)}
         className="w-full sm:w-[250px] green-pink-gradient p-[3px] rounded-[22px] shadow-cardlow"
       >
         <div
@@ -31,24 +35,37 @@ const SkillCard = ({ index, name, icon }) => {
   );
 };
 
-
 const Tech = () => {
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 4,
-      slidesToSlide: 4, // optional, default to 1.
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      slidesToSlide: 2, // optional, default to 1.
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      slidesToSlide: 1, // optional, default to 1.
-    },
+  var settings = {
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    centerPadding: "0%", // Adjust this value to control the space between cards
+    slidesToShow: 4,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: true,
+    easing: "ease-in-out",
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
+    responsive: [
+      {
+        breakpoint:1024 ,
+        settings: {
+          slidesToShow: 3,
+          centerPadding: "0%", // Adjust this value for the desired card width
+        },
+      },
+      {
+        breakpoint:  810,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "0%",
+          arrows: false,
+        },
+      },
+    ],
   };
 
   return (
@@ -57,25 +74,11 @@ const Tech = () => {
         <p className={styles.sectionSubText}>What I Know</p>
         <h2 className={styles.sectionHeadText}>Skills.</h2>
       </motion.div>
-      <Carousel
-        swipeable={true}
-        draggable={false}
-        showDots={false}
-        responsive={responsive}
-        ssr={true} // means to render carousel on server-side.
-        infinite={true}
-        autoPlay={true}
-        autoPlaySpeed={5000}
-        keyBoardControl={true}
-        customTransition="all .5"
-        transitionDuration={500}
-        containerClass="carousel-container"
-        itemClass="carousel-item-padding-40-px"
-      >
+      <Slider {...settings}>
         {technologies.map((skill, index) => (
           <SkillCard key={skill.name} index={index} {...skill} />
         ))}
-      </Carousel>
+      </Slider>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import logo from "./logo3.png";
+import logo from "./logov2.png";
 import share from "./share.png";
 import menu from "./menu.svg";
 import close from "./close.svg";

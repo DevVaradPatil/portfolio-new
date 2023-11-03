@@ -175,6 +175,31 @@ html{
   transform: translateZ(0);
 }
 
+.cursor-line {
+  display: inline-block;
+  width: 1px;
+  height: 1em; /* Adjust the height of the cursor line */
+  color: #8A2BE2;
+  background-color: transparent; /* Adjust the color of the cursor line */
+  margin-left: 2px; /* Adjust the spacing between the cursor line and text */
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blink {
+  animation: blink 1s infinite;
+}
+
 @keyframes mulShdSpin {
   0%,
   100% {
