@@ -27,6 +27,7 @@ import plantsnap from './plantsnap.png'
 import organizify from './organizify.png'
 import snikrz from './snikrz.png'
 import threads from './threads.png'
+import spotify from './spotify.png'
 
 import hero from './creator.svg'
 
@@ -59,5 +60,6 @@ export {
   plantsnap,
   organizify,
   snikrz,
-  threads
+  threads,
+  spotify
 };

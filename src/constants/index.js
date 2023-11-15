@@ -20,7 +20,8 @@ import {
     plantsnap,
     organizify,
     snikrz,
-    threads
+    threads,
+    spotify
   } from "../assets";
   
   export const navLinks = [
@@ -118,29 +119,29 @@ import {
   
   const experiences = [
     {
-      title: "Web Developer",
-      company_name: "Freelancer",
-      icon: freelancer,
-      iconBg: "#383E56",
-      date: "April 2021 - Dec 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
       title: "React.js Developer",
       company_name: "Bubble Byte",
       icon: bblogo,
       iconBg: "#383E56",
-      date: "Jan 2023 - Present",
+      date: "Aug 2022 - Aug 2023",
       points: [
         "Developed and maintained responsive and user-friendly websites using modern web technologies, such as HTML5, CSS3, and JavaScript.",
         "Collaborated with cross-functional teams to design and implement front-end solutions that aligned with project requirements and business goals.",
         "Utilized frameworks and libraries like React.js, Angular, or Vue.js to build interactive and dynamic user interfaces, enhancing user experience and engagement.",
         "Implemented responsive web design principles to ensure seamless functionality and visual consistency across different devices and screen sizes.",
+      ],
+    },
+    {
+      title: "FullStack Web Developer",
+      company_name: "Freelancer",
+      icon: freelancer,
+      iconBg: "#383E56",
+      date: "Aug 2023 - Present",
+      points: [
+        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
   ];
@@ -173,6 +174,27 @@ import {
   ];
   
   const projects = [
+    {
+      name: "Spotify 2.O",
+      description:
+        "Experience a personalized music journey on my Spotify clone website, featuring seamless user authentication for a secure and customized musical exploration",
+      tags: [
+        {
+          name: "Next.js",
+          color: "white-text-gradient",
+        },
+        {
+          name: "Supabase",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "Stripe",
+          color: "green-text-gradient",
+        },
+      ],
+      image: spotify,
+      source_code_link: "https://spotify-2-o.vercel.app/",
+    },
     {
       name: "Snikrz",
       description:
