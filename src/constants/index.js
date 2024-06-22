@@ -27,7 +27,9 @@ import {
     mern,
     react,
     next,
-    tail
+    tail,
+    codesnap,
+    zelda
   } from "../assets";
   
   export const navLinks = [
@@ -242,6 +244,69 @@ import {
       ],
       image: beaesthetic,
       source_code_link: "https://beaesthetic.fit/",
+    },
+    {
+      name: "CodeSnap",
+      description:
+        "Streamline your coding experience with CodeSnap, a Next.js-based snippet generator that seamlessly integrates functionality and efficiency for all your development needs.",
+      tags: [
+        {
+          name: "Next.js",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Shadcn",
+          color: "white-text-gradient",
+        },
+        {
+          name: "UI/UX",
+          color: "orange-text-gradient",
+        },  
+      ],
+      image: codesnap,
+      source_code_link: "https://codesnap.web.app/",
+    },
+    {
+      name: "Zelda Game",
+      description:
+        "Embark on an epic adventure with our Zelda-inspired game, crafted using pure JavaScript and Kaboom for an immersive and nostalgic gaming experience.",
+      tags: [
+        {
+          name: "Javascript",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Kaboom.js",
+          color: "white-text-gradient",
+        },
+        {
+          name: "Github",
+          color: "orange-text-gradient",
+        },  
+      ],
+      image: zelda,
+      source_code_link: "https://devvaradpatil.github.io/zeldagame/",
+    },
+    {
+      name: "3D Portfolio",
+      description:
+        "Developed an immersive 3D portfolio island website, providing a visually stunning and interactive platform to showcase my projects and creative work.",
+      tags: [
+        {
+          name: "Three.js",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "React.js",
+          color: "white-text-gradient",
+        },
+        {
+          name: "Framer-motion",
+          color: "orange-text-gradient",
+        },  
+      ],
+      image: island,
+      source_code_link: "https://varad-dev-island.vercel.app/",
     },
   ];
   

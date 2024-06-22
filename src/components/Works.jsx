@@ -87,11 +87,11 @@ const Works = () => {
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">
-        {projects.slice(0, 3).map((project, index) => (
+        {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-      <motion.div variants={fadeIn("up", "spring",  1.5, 0.75)}  className="w-full items-center justify-center">
+      <motion.div variants={fadeIn("up", "spring",  3, 0.75)}  className="w-full items-center justify-center">
         <Link
           to={"https://varad-dev-showcase.web.app/"}
           target="_blank"

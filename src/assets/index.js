@@ -34,6 +34,8 @@ import threads from './threads.png'
 import spotify from './spotify.png'
 import island from './island.png'
 import beaesthetic from './beaesthetic.png'
+import codesnap from './codesnap.png'
+import zelda from './zelda.png'
 
 import mern from './mern.webp'
 
@@ -76,4 +78,6 @@ export {
   react,
   next,
   tail,
+  codesnap,
+  zelda
 };
