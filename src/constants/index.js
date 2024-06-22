@@ -21,7 +21,8 @@ import {
     organizify,
     snikrz,
     threads,
-    spotify
+    spotify,
+    island
   } from "../assets";
   
   export const navLinks = [
@@ -217,109 +218,25 @@ import {
       source_code_link: "http://snikrz.web.app/",
     },
     {
-      name: "Threads",
+      name: "3D Portfolio",
       description:
-        "Threads your new social media hub! A dynamic full stack web platform for sharing ideas and connecting white like-minded individuals and stay productive",
+        "Step into my 3D portfolio, where imagination takes shape in pixel-perfect worlds. Experience the fusion of artistry and technology.",
       tags: [
         {
-          name: "nextjs",
-          color: "white-text-gradient",
-        },
-        {
-          name: "MongoDB",
-          color: "green-text-gradient",
-        },
-        {
-          name: "clerk",
-          color: "orange-text-gradient",
-        },
-      ],
-      image: threads,
-      source_code_link: "https://threads-app-sooty.vercel.app/",
-    },
-    {
-      name: "Organizify",
-      description:
-        "Your all-in-one task organizer powered by Next.js and OpenAI. Experience seamless task management with drag-and-drop ease, and enjoy quick summaries of your to-dos.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "appwrite",
+          name: "React.js",
           color: "pink-text-gradient",
         },
         {
-          name: "clerk",
-          color: "white-text-gradient",
-        },
-      ],
-      image: organizify,
-      source_code_link: "https://organizify-by-varad-ass8e66kb-devvaradpatil.vercel.app/",
-    },
-    {
-      name: "PlantSnap",
-      description:
-        "Your ultimate plant identification companion! Simply snap a photo of any plant, and let us instantly identify it for you. Explore the fascinating world of flora at your fingertips.",
-      tags: [
-        {
-          name: "react",
+          name: "ThreeJS",
           color: "white-text-gradient",
         },
         {
-          name: "mongodb",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "API",
-          color: "green-text-gradient",
-        },
-      ],
-      image: plantsnap,
-      source_code_link: "https://plantsnap.web.app/",
-    },
-    {
-      name: "Gericht Restaurant",
-      description:
-        "Gericht Restaurant Website, which has the most elegant design with a beautiful UI that will make any viewer drool just by the looks of it made with ReactJS ",
-      tags: [
-        {
-          name: "react",
-          color: "black-text-gradient",
-        },
-        {
-          name: "mongodb",
+          name: "Vercel",
           color: "orange-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
+        },  
       ],
-      image: gericht,
-      source_code_link: "https://gericht-restaurant-by-varad.web.app/",
-    },
-    {
-      name: "Bubble Byte",
-      description:
-        "A Website for Bubble Byte an innovative EdTech startup that is revolutionizing the way students learn and engage with technology and have fun at the same time. ",
-      tags: [
-        {
-          name: "react",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "black-text-gradient",
-        },
-      ],
-      image: bb,
-      source_code_link: "https://bubblebyte.in/",
+      image: island,
+      source_code_link: "https://varad-dev-island.vercel.app/",
     },
   ];
   

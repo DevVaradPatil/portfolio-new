@@ -1,6 +1,5 @@
 import React from "react";
 import { SectionWrapper } from "../hoc";
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
@@ -27,7 +26,7 @@ const SkillCard = ({ index, name, icon }) => {
           }}
           className="rounded-[20px] bg-white py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
-          <img src={icon} alt={name} className="w-35 h-35 object-contain" />
+          <img src={icon} alt={name} className="w-35 h-35 object-contain" loading="lazy"/>
           <h3 className="text-black text-[20px] text-center">{name}</h3>
         </div>
       </motion.div>

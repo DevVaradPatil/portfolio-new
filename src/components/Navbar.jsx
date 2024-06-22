@@ -5,16 +5,11 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { menu, close, logo } from "../assets";
 
-import useSound from "use-sound";
-import song from "../assets/song.mp3";
-import { HiMiniSpeakerWave, HiMiniSpeakerXMark } from "react-icons/hi2";
 const words = ["Web Developer", "Web Designer", "Coder"];
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(false);
 
-  const [play, { stop }] = useSound(song);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');
   const [isTyping, setIsTyping] = useState(true);
@@ -63,7 +58,6 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-[45px] object-contain" />
-          {/* <h2 className="text-black font-semibold text-[30px]">[V]</h2> */}
           <p className="text-black text-[18px] font-bold cursor-pointer flex relative">
             Varad &nbsp;
             <span className="sm:block hidden">
@@ -84,24 +78,6 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
-          <li
-            onClick={() => {
-              if (isPlaying) {
-                stop();
-                setIsPlaying(false);
-              } else {
-                setIsPlaying(true);
-                play();
-              }
-            }}
-            className="cursor-pointer"
-          >
-            {!isPlaying ? (
-              <HiMiniSpeakerWave fontSize={25} color="gray" />
-            ) : (
-              <HiMiniSpeakerXMark fontSize={25} color="gray" />
-            )}
-          </li>
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">

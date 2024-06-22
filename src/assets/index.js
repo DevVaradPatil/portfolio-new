@@ -1,4 +1,4 @@
-import logo from "./logov2.png";
+import logo from "./logov2.webp";
 import share from "./share.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -28,6 +28,7 @@ import organizify from './organizify.png'
 import snikrz from './snikrz.png'
 import threads from './threads.png'
 import spotify from './spotify.png'
+import island from './island.png'
 
 import hero from './creator.svg'
 
@@ -61,5 +62,6 @@ export {
   organizify,
   snikrz,
   threads,
-  spotify
+  spotify,
+  island
 };
