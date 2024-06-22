@@ -29,6 +29,9 @@ import snikrz from './snikrz.png'
 import threads from './threads.png'
 import spotify from './spotify.png'
 import island from './island.png'
+import beaesthetic from './beaesthetic.png'
+
+import mern from './mern.webp'
 
 import hero from './creator.svg'
 
@@ -63,5 +66,7 @@ export {
   snikrz,
   threads,
   spotify,
-  island
+  island,
+  beaesthetic,
+  mern
 };

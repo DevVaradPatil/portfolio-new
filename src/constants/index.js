@@ -22,7 +22,9 @@ import {
     snikrz,
     threads,
     spotify,
-    island
+    island,
+    beaesthetic,
+    mern
   } from "../assets";
   
   export const navLinks = [
@@ -46,20 +48,20 @@ import {
   
   const services = [
     {
-      title: "Next.js",
-      icon: "https://sourabhportfolio.vercel.app/_next/static/media/nextjs.78e10107.svg",
-    },
-    {
       title: "React.js",
       icon: "https://sourabhportfolio.vercel.app/_next/static/media/reactjs.1aa78cde.svg",
     },
     {
-      title: "Tailwind CSS",
-      icon: "https://sourabhportfolio.vercel.app/_next/static/media/tailwindcss.d5e64ee8.svg",
+      title: "Next.js",
+      icon: "https://sourabhportfolio.vercel.app/_next/static/media/nextjs.78e10107.svg",
     },
     {
-      title: "HTML/CSS/JS",
-      icon: "https://sourabhportfolio.vercel.app/_next/static/media/htmlcss.84be4743.svg",
+      title: "MERN Stack",
+      icon: mern,
+    },
+    {
+      title: "Tailwind CSS",
+      icon: "https://sourabhportfolio.vercel.app/_next/static/media/tailwindcss.d5e64ee8.svg",
     },
   ];
   
@@ -218,25 +220,25 @@ import {
       source_code_link: "http://snikrz.web.app/",
     },
     {
-      name: "3D Portfolio",
+      name: "BeAesthetic (Freelance)",
       description:
-        "Step into my 3D portfolio, where imagination takes shape in pixel-perfect worlds. Experience the fusion of artistry and technology.",
+        "A freelance project done by me for a client. It is a full-stack fitness event website with a beautiful UI/UX design and smooth animations.",
       tags: [
         {
           name: "React.js",
           color: "pink-text-gradient",
         },
         {
-          name: "ThreeJS",
+          name: "Razorpay",
           color: "white-text-gradient",
         },
         {
-          name: "Vercel",
+          name: "Framer-motion",
           color: "orange-text-gradient",
         },  
       ],
-      image: island,
-      source_code_link: "https://varad-dev-island.vercel.app/",
+      image: beaesthetic,
+      source_code_link: "https://beaesthetic.fit/",
     },
   ];
   

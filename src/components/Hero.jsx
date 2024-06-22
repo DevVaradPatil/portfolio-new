@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { hero } from "../assets";
@@ -6,6 +6,17 @@ import { fadeIn, textVariant } from "../utils/motion";
 import Scene from "./Scene";
 
 const Hero = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <section className="relative w-full h-screen mx-auto max-w-[1300px]">
       <div
@@ -41,14 +52,19 @@ const Hero = () => {
             </motion.p>
           </div>
         </div>
-        {/* <motion.div
-        initial={{ opacity: 0, x: 200 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.4, delay: 0.7 }}
-        >
-        <img src={hero} alt="hero__img"  className='w-[600px] sm:ml-20'/>
-        </motion.div> */}
+        
+        {isMobile ? (
+          <motion.div
+            initial={{ opacity: 0, x: 200 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4, delay: 0.7 }}
+            className="flex"
+          >
+            <img src={hero} alt="hero__img" className='w-[600px] sm:ml-20'/>
+          </motion.div>
+        ) : (
           <Scene />
+        )}
       </div>
 
       <div className="absolute xs:bottom-10 bottom-10  w-full flex justify-center items-center">
