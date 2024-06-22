@@ -17,6 +17,10 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
+import react from "./reactjs.svg";
+import next from "./nextjs.svg";
+import tail from "./tailwind.svg";
+
 import freelancer from "./company/freelancer.png"
 import bblogo from "./company/bb.png"
 
@@ -68,5 +72,8 @@ export {
   spotify,
   island,
   beaesthetic,
-  mern
+  mern,
+  react,
+  next,
+  tail,
 };

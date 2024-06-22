@@ -10,7 +10,7 @@ const Loader = () => (
       transition={{ duration: 0.5, repeat: Infinity, repeatType: 'reverse' }}
       className="w-10 h-10 bg-violet-500 rounded-full mb-4"
     />
-    <p className="text-lg text-black font-semibold">Loading...</p>
+    <p className="text-lg text-black font-semibold">Preparing Awesomeness...</p>
   </div>
 );
 

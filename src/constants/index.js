@@ -24,7 +24,10 @@ import {
     spotify,
     island,
     beaesthetic,
-    mern
+    mern,
+    react,
+    next,
+    tail
   } from "../assets";
   
   export const navLinks = [
@@ -49,11 +52,11 @@ import {
   const services = [
     {
       title: "React.js",
-      icon: "https://sourabhportfolio.vercel.app/_next/static/media/reactjs.1aa78cde.svg",
+      icon: react,
     },
     {
       title: "Next.js",
-      icon: "https://sourabhportfolio.vercel.app/_next/static/media/nextjs.78e10107.svg",
+      icon: next,
     },
     {
       title: "MERN Stack",
@@ -61,7 +64,7 @@ import {
     },
     {
       title: "Tailwind CSS",
-      icon: "https://sourabhportfolio.vercel.app/_next/static/media/tailwindcss.d5e64ee8.svg",
+      icon: tail,
     },
   ];
   
