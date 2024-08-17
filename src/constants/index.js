@@ -29,7 +29,10 @@ import {
     next,
     tail,
     codesnap,
-    zelda
+    zelda,
+    aman,
+  pghatge,
+  psakhre,
   } from "../assets";
   
   export const navLinks = [
@@ -157,28 +160,29 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Varad proved me wrong.",
-      name: "Asha Patel",
-      designation: "CEO",
-      company: "TechWiz Solutions",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "Varad is a talented and dedicated web developer. His positive attitude, dedication and expert skills made our website a great success!",
+      name: "Prathamesh Sakhare",
+      designation: "Lead",
+      company: "GDSC RIT'23",
+      image: psakhre,
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Varad does.",
-      name: "Rohit Jadhav",
-      designation: "Creative Director",
-      company: "DigitalXcel",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "Incredible design, seamless functionality! Highly recommend. Varad is just phenomenal!",
+        "Varad's web development skills are outstanding. He built a responsive, efficient site that exceeded our expectations. Highly recommend!",
       name: "A K Pathan",
       designation: "CEO",
       company: "Bubble Byte",
-      image: "https://randomuser.me/api/portraits/men/1.jpg",
+      image: aman,
     },
+    {
+      testimonial:
+        "Varad's a problem-solving whiz! Super efficient and always delivering top-notch results. Highly recommend him for any web-development work!",
+      name: "Prathamesh Ghatge",
+      designation: "Founder",
+      company: "A Flat Undesign",
+      image:pghatge,
+    },
+  
   ];
   
   const projects = [
@@ -193,11 +197,11 @@ import {
         },
         {
           name: "Supabase",
-          color: "orange-text-gradient",
+          color: "yellow-text-gradient",
         },
         {
           name: "Stripe",
-          color: "green-text-gradient",
+          color: "red-text-gradient",
         },
       ],
       image: spotify,
@@ -210,15 +214,15 @@ import {
       tags: [
         {
           name: "MERN",
-          color: "white-text-gradient",
+          color: "light-pink-text-gradient",
         },
         {
           name: "MongoDB",
-          color: "orange-text-gradient",
+          color: "green-golden-text-gradient",
         },
         {
           name: "Stripe",
-          color: "pink-text-gradient",
+          color: "yellow-text-gradient",
         },
       ],
       image: snikrz,
@@ -231,19 +235,19 @@ import {
       tags: [
         {
           name: "React.js",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Razorpay",
           color: "white-text-gradient",
         },
         {
+          name: "Razorpay",
+          color: "gray-text-gradient",
+        },
+        {
           name: "Framer-motion",
-          color: "orange-text-gradient",
+          color: "red-text-gradient",
         },  
       ],
       image: beaesthetic,
-      source_code_link: "https://beaesthetic.fit/",
+      source_code_link: "https://www.beaesthetic.co.in/",
     },
     {
       name: "CodeSnap",
@@ -252,7 +256,7 @@ import {
       tags: [
         {
           name: "Next.js",
-          color: "pink-text-gradient",
+          color: "gray-text-gradient",
         },
         {
           name: "Shadcn",
@@ -260,7 +264,7 @@ import {
         },
         {
           name: "UI/UX",
-          color: "orange-text-gradient",
+          color: "light-pink-text-gradient ",
         },  
       ],
       image: codesnap,
@@ -273,15 +277,15 @@ import {
       tags: [
         {
           name: "Javascript",
-          color: "pink-text-gradient",
+          color: "orange-text-gradient",
         },
         {
           name: "Kaboom.js",
-          color: "white-text-gradient",
+          color: "light-pink-text-gradient",
         },
         {
           name: "Github",
-          color: "orange-text-gradient",
+          color: "gray-text-gradient",
         },  
       ],
       image: zelda,
@@ -294,11 +298,11 @@ import {
       tags: [
         {
           name: "Three.js",
-          color: "pink-text-gradient",
+          color: "red-text-gradient",
         },
         {
           name: "React.js",
-          color: "white-text-gradient",
+          color: "light-pink-text-gradient",
         },
         {
           name: "Framer-motion",

@@ -8,6 +8,7 @@ import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import GoToTopButton from './GoToTopButton';
+import Works2 from './Works2';
 
 export {
   Hero,
@@ -20,5 +21,6 @@ export {
   Contact,
   EarthCanvas,
   StarsCanvas,
-  GoToTopButton
+  GoToTopButton,
+  Works2
 }

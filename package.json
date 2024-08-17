@@ -29,7 +29,8 @@
     "react-vertical-timeline-component": "^3.6.0",
     "slick-carousel": "^1.8.1",
     "three": "^0.152.2",
-    "use-sound": "^4.0.1"
+    "use-sound": "^4.0.1",
+    "vite-plugin-sitemap": "^0.6.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

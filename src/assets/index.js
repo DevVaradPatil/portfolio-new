@@ -42,6 +42,11 @@ import mern from './mern.webp'
 import hero from './creator.svg'
 
 import quote from './quote.png'
+
+import aman from './aman.jpeg'
+import psakhre from './psakhre.jpeg'
+import pghatge from './pghatge.jpeg'
+
 export {
   logo,
   share,
@@ -79,5 +84,8 @@ export {
   next,
   tail,
   codesnap,
-  zelda
+  zelda,
+  aman,
+  pghatge,
+  psakhre,
 };
