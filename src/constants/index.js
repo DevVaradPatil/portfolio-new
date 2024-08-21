@@ -33,6 +33,7 @@ import {
     aman,
   pghatge,
   psakhre,
+  thinktank
   } from "../assets";
   
   export const navLinks = [
@@ -208,6 +209,27 @@ import {
       source_code_link: "https://spotify-2-o.vercel.app/",
     },
     {
+      name: "Think Tank India",
+      description:
+        "Explore innovation with Think Tank India, a modern blog-style platform designed to showcase projects with a sleek, contemporary design.",
+      tags: [
+        {
+          name: "Next.js",
+          color: "white-text-gradient",
+        },
+        {
+          name: "Prisma",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Shadcn",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: thinktank,
+      source_code_link: "http://thinktankindia.vercel.app/",
+    },
+    {
       name: "Snikrz",
       description:
         "Ultimate sneaker shopping destination with our MERN-based full-stack e-commerce website, offering a seamless blend of style and technology for all your footwear needs.",
@@ -269,27 +291,6 @@ import {
       ],
       image: codesnap,
       source_code_link: "https://codesnap.web.app/",
-    },
-    {
-      name: "Zelda Game",
-      description:
-        "Embark on an epic adventure with our Zelda-inspired game, crafted using pure JavaScript and Kaboom for an immersive and nostalgic gaming experience.",
-      tags: [
-        {
-          name: "Javascript",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "Kaboom.js",
-          color: "light-pink-text-gradient",
-        },
-        {
-          name: "Github",
-          color: "gray-text-gradient",
-        },  
-      ],
-      image: zelda,
-      source_code_link: "https://devvaradpatil.github.io/zeldagame/",
     },
     {
       name: "3D Portfolio",

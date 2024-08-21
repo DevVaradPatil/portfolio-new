@@ -29,14 +29,14 @@ import gericht from "./gericht.png";
 import nalanda from "./nalanda.png";
 import plantsnap from './plantsnap.png'
 import organizify from './organizify.png'
-import snikrz from './snikrz.png'
+import snikrz from './projects/snikrz.webp'
 import threads from './threads.png'
-import spotify from './spotify.png'
-import island from './island.png'
-import beaesthetic from './beaesthetic.png'
-import codesnap from './codesnap.png'
-import zelda from './zelda.png'
-
+import spotify from './projects/spotify.webp'
+import island from './projects/island.webp'
+import beaesthetic from './projects/beaesthetic.webp'
+import codesnap from './projects/codesnap.webp'
+import zelda from './projects/zelda.webp'
+import thinktank from './projects/thinktank.webp'
 import mern from './mern.webp'
 
 import hero from './creator.svg'
@@ -88,4 +88,5 @@ export {
   aman,
   pghatge,
   psakhre,
+  thinktank,
 };

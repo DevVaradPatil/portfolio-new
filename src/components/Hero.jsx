@@ -1,22 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { hero } from "../assets";
-import { fadeIn, textVariant } from "../utils/motion";
 import Scene from "./Scene";
 
 const Hero = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 640);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
   return (
     <section className="relative w-full h-screen mx-auto max-w-[1300px]">
       <div
@@ -52,19 +40,20 @@ const Hero = () => {
             </motion.p>
           </div>
         </div>
-        
-        {isMobile ? (
-          <motion.div
-            initial={{ opacity: 0, x: 200 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.4, delay: 0.7 }}
-            className="flex"
-          >
-            <img src={hero} alt="hero__img" className='w-[600px] sm:ml-20'/>
-          </motion.div>
-        ) : (
-          <Scene />
-        )}
+
+        <div className="flex sm:hidden">
+          <div className="flex w-full">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/my-3d-portfolio.appspot.com/o/creator.webp?alt=media&token=2a51ff1e-6747-45dd-a597-36d99ef89e3b"
+              alt="hero__img"
+              className="w-full mix-blend-multiply"
+            />
+          </div>
+        </div>
+        <div className="hidden sm:flex w-full justify-center items-center ">
+        <Scene />
+        </div>
+
       </div>
 
       <div className="absolute xs:bottom-10 bottom-10  w-full flex justify-center items-center">
