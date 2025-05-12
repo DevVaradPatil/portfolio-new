@@ -11,7 +11,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const [currentText, setCurrentText] = useState('');
+  const [currentText, setCurrentText] = useState("");
   const [isTyping, setIsTyping] = useState(true);
 
   useEffect(() => {
@@ -27,7 +27,6 @@ const Navbar = () => {
         timeout = setTimeout(() => {
           setIsTyping(false);
         }, 3000); // Delay before erasing
-
       }
     } else {
       if (currentText.length > 0) {
@@ -62,7 +61,9 @@ const Navbar = () => {
             Varad &nbsp;
             <span className="sm:block hidden">
               <span className="text-theme">|</span> {currentText}
-              <span className={`cursor-line ${isTyping ? "blink" : ""}`}>|</span>
+              <span className={`cursor-line ${isTyping ? "blink" : ""}`}>
+                |
+              </span>
             </span>
           </p>
         </Link>
@@ -78,6 +79,15 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
+          <li>
+            <a
+              href="/Varad_Resume_Feb25.pdf"
+              download
+              className="text-gray-500 hover:text-black text-[18px] font-medium cursor-pointer"
+            >
+              Resume
+            </a>
+          </li>
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -108,6 +118,15 @@ const Navbar = () => {
                   <a href={`#${link.id}`}>{link.title}</a>
                 </li>
               ))}
+              <li>
+                <a
+                  href="/Varad_Resume_Feb25.pdf"
+                  download
+                  className="text-neutral-100 font-medium cursor-pointer"
+                >
+                  Resume
+                </a>
+              </li>
             </ul>
           </div>
         </div>

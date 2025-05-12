@@ -23,6 +23,7 @@ import tail from "./tailwind.svg";
 
 import freelancer from "./company/freelancer.png"
 import bblogo from "./company/bb.png"
+import altair from "./company/altair.png"
 
 import bb from "./bb.png";
 import gericht from "./gericht.png";
@@ -89,4 +90,5 @@ export {
   pghatge,
   psakhre,
   thinktank,
+  altair
 };
