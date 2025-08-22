@@ -92,7 +92,8 @@ self.addEventListener('fetch', (event) => {
   
   // Handle different types of requests
   if (isSplineAsset(url)) {
-    event.respondWith(handleSplineAsset(request));
+    // Temporarily pass through Spline assets without service worker intervention
+    return;
   } else if (isStaticAsset(url)) {
     event.respondWith(handleStaticAsset(request));
   } else if (isNetworkFirst(url)) {
@@ -117,31 +118,17 @@ function isNetworkFirst(url) {
   return NETWORK_FIRST.some(pattern => pattern.test(url.href));
 }
 
-// Handle Spline assets with special caching
+// Handle Spline assets with network-first strategy
 async function handleSplineAsset(request) {
   const cache = await caches.open(SPLINE_CACHE);
   
   try {
-    // Try cache first for Spline assets (they don't change often)
-    const cachedResponse = await cache.match(request);
-    if (cachedResponse) {
-      console.log('Service Worker: Serving Spline asset from cache:', request.url);
-      
-      // Update cache in background if asset is older than 24 hours
-      const cacheDate = cachedResponse.headers.get('sw-cache-date');
-      if (cacheDate && (Date.now() - parseInt(cacheDate)) > 24 * 60 * 60 * 1000) {
-        updateSplineAssetInBackground(request, cache);
-      }
-      
-      return cachedResponse;
-    }
-    
-    // Fetch from network with timeout
+    // Try network first for Spline assets to ensure proper loading
     console.log('Service Worker: Fetching Spline asset from network:', request.url);
-    const networkResponse = await fetchWithTimeout(request, 10000);
+    const networkResponse = await fetchWithTimeout(request, 15000);
     
     if (networkResponse && networkResponse.ok) {
-      // Add custom header for cache date tracking
+      // Cache the response for offline use
       const responseToCache = new Response(networkResponse.body, {
         status: networkResponse.status,
         statusText: networkResponse.statusText,
@@ -160,23 +147,18 @@ async function handleSplineAsset(request) {
     throw new Error('Network response not ok');
     
   } catch (error) {
-    console.warn('Service Worker: Spline asset fetch failed:', error);
+    console.warn('Service Worker: Spline asset network fetch failed, trying cache:', error);
     
-    // Try to serve stale cache as fallback
-    const staleResponse = await cache.match(request);
-    if (staleResponse) {
-      console.log('Service Worker: Serving stale Spline asset:', request.url);
-      return staleResponse;
+    // Fall back to cache only if network fails
+    const cachedResponse = await cache.match(request);
+    if (cachedResponse) {
+      console.log('Service Worker: Serving Spline asset from cache as fallback:', request.url);
+      return cachedResponse;
     }
     
-    // Return offline fallback
-    return new Response(
-      JSON.stringify({ error: 'Asset unavailable offline' }),
-      { 
-        status: 503,
-        headers: { 'Content-Type': 'application/json' }
-      }
-    );
+    // Return network error - let the app handle retries
+    console.warn('Service Worker: No cached Spline asset available:', request.url);
+    throw error;
   }
 }
 
