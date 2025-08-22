@@ -39,6 +39,8 @@ import codesnap from './projects/codesnap.webp'
 import zelda from './projects/zelda.webp'
 import thinktank from './projects/thinktank.webp'
 import mern from './mern.webp'
+import frontendtoolbox from './projects/frontendtoolbox.webp'
+import bento from './projects/bento.webp'
 
 import hero from './creator.svg'
 
@@ -90,5 +92,7 @@ export {
   pghatge,
   psakhre,
   thinktank,
-  altair
+  altair,
+  frontendtoolbox,
+  bento
 };

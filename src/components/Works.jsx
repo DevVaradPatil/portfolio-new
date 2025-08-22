@@ -89,7 +89,7 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-      <motion.div variants={fadeIn("up", "spring",  3, 0.75)}  className="w-full items-center justify-center">
+      {/* <motion.div variants={fadeIn("up", "spring",  3, 0.75)}  className="w-full items-center justify-center">
         <Link
           to={"https://varad-dev-showcase.web.app/"}
           target="_blank"
@@ -97,7 +97,7 @@ const Works = () => {
         >
           View All Projects <BsRocketTakeoff size={22} />
         </Link>
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 };

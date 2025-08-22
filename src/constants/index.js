@@ -35,6 +35,8 @@ import {
   psakhre,
   thinktank,
   altair,
+  frontendtoolbox,
+  bento
 } from "../assets";
 
 export const navLinks = [
@@ -162,7 +164,7 @@ const experiences = [
     company_name: "Altair Engineering",
     icon: altair,
     iconBg: "#383E56",
-    date: "Jan 2025 - Present",
+    date: "Jan 2025 - Jun 2025",
     points: [
       "Contributed to the development of internal dashboards and web tools using React.js, Tailwind CSS, and RESTful APIs.",
       "Collaborated closely with design and backend teams to create intuitive UI/UX interfaces that support engineering workflows.",
@@ -200,6 +202,27 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Frontend Toolbox",
+    description:
+      "A comprehensive collection of CSS tools and generators for developers – build gradients, shadows, grids, flex layouts, and more with real-time previews and instant copy.",
+    tags: [
+      {
+        name: "React",
+        color: "white-text-gradient",
+      },
+      {
+        name: "Vite",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: frontendtoolbox,
+    source_code_link: "https://frontend-toolbox-ten.vercel.app/",
+  },
   {
     name: "Spotify 2.O",
     description:
@@ -263,6 +286,27 @@ const projects = [
     image: snikrz,
     source_code_link: "http://snikrz.web.app/",
   },
+  {
+  name: "Bento Portfolio",
+  description:
+    "An interactive and visually stunning portfolio template featuring an animated bento grid layout, smooth transitions, and animations – perfect for developers and designers.",
+  tags: [
+    {
+      name: "React",
+      color: "white-text-gradient",
+    },
+    {
+      name: "TailwindCSS",
+      color: "pink-text-gradient",
+    },
+    {
+      name: "LottieFiles",
+      color: "yellow-text-gradient",
+    },
+  ],
+  image: bento,
+  source_code_link: "https://varadverse.vercel.app/",
+},
   {
     name: "BeAesthetic (Freelance)",
     description:
