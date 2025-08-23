@@ -144,7 +144,7 @@ const Navbar = () => {
           ))}
           <li>
             <a
-              href="/Varad_Resume_Feb25.pdf"
+              href="/Varad_Resume_Aug25_Web2.pdf"
               download
               className="relative inline-flex items-center px-6 py-2.5 text-[16px] font-medium text-white bg-gradient-to-r from-theme to-theme/80 rounded-full transition-all duration-300 hover:from-theme/90 hover:to-theme/70 hover:scale-105 hover:shadow-lg hover:shadow-theme/25 group overflow-hidden"
             >
@@ -174,8 +174,8 @@ const Navbar = () => {
           <button
             className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
               toggle
-                ? "bg-theme/10 rotate-180"
-                : "bg-gray-100 hover:bg-theme/10"
+                ? "bg-theme/50 rotate-180"
+                : "bg-theme/50 hover:bg-theme/10"
             }`}
             onClick={() => setToggle(!toggle)}
             aria-label="Toggle menu"
@@ -192,7 +192,7 @@ const Navbar = () => {
               !toggle
                 ? "opacity-0 invisible translate-y-2 scale-95"
                 : "opacity-100 visible translate-y-0 scale-100"
-            } absolute top-16 right-4 w-64 bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 transition-all duration-300 transform origin-top-right overflow-hidden`}
+            } absolute top-16 right-4 w-72 bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 transition-all duration-300 transform origin-top-right overflow-hidden`}
           >
             <div className="p-6">
               <ul className="space-y-4">
@@ -237,7 +237,7 @@ const Navbar = () => {
                   }}
                 >
                   <a
-                    href="/Varad_Resume_Feb25.pdf"
+                    href="/Varad_Resume_Aug25_Web2.pdf"
                     download
                     className="block w-full px-4 py-3 text-center text-white bg-gradient-to-r from-theme to-theme/80 rounded-xl font-medium transition-all duration-300 hover:from-theme/90 hover:to-theme/70 hover:scale-105 hover:shadow-lg"
                     onClick={() => setToggle(false)}

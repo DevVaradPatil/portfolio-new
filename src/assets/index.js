@@ -50,6 +50,11 @@ import aman from './aman.jpeg'
 import psakhre from './psakhre.jpeg'
 import pghatge from './pghatge.jpeg'
 
+import frontend from './services/frontend.svg'
+import backend from './services/backend.svg'
+import android from './services/android.svg'
+import ai from './services/ai.svg'
+
 export {
   logo,
   share,
@@ -94,5 +99,9 @@ export {
   thinktank,
   altair,
   frontendtoolbox,
-  bento
+  bento,
+  backend,
+  android,
+  ai,
+  frontend
 };

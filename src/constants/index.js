@@ -11,32 +11,25 @@ import {
   git,
   figma,
   docker,
-  bb,
-  nalanda,
-  gericht,
   threejs,
   freelancer,
   bblogo,
-  plantsnap,
-  organizify,
   snikrz,
-  threads,
   spotify,
   island,
   beaesthetic,
-  mern,
-  react,
-  next,
-  tail,
   codesnap,
-  zelda,
   aman,
   pghatge,
   psakhre,
   thinktank,
   altair,
   frontendtoolbox,
-  bento
+  bento,
+  backend,
+  android,
+  ai,
+  frontend,
 } from "../assets";
 
 export const navLinks = [
@@ -60,20 +53,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "React.js",
-    icon: react,
+    title: "Frontend Development",
+    icon: frontend,
   },
   {
-    title: "Next.js",
-    icon: next,
+    title: "Full Stack Development",
+    icon: backend,
   },
   {
-    title: "MERN Stack",
-    icon: mern,
+    title: "Android Development",
+    icon: android,
   },
   {
-    title: "Tailwind CSS",
-    icon: tail,
+    title: "AI-Powered Applications",
+    icon: ai,
   },
 ];
 
@@ -287,26 +280,26 @@ const projects = [
     source_code_link: "http://snikrz.web.app/",
   },
   {
-  name: "Bento Portfolio",
-  description:
-    "An interactive and visually stunning portfolio template featuring an animated bento grid layout, smooth transitions, and animations – perfect for developers and designers.",
-  tags: [
-    {
-      name: "React",
-      color: "white-text-gradient",
-    },
-    {
-      name: "TailwindCSS",
-      color: "pink-text-gradient",
-    },
-    {
-      name: "LottieFiles",
-      color: "yellow-text-gradient",
-    },
-  ],
-  image: bento,
-  source_code_link: "https://varadverse.vercel.app/",
-},
+    name: "Bento Portfolio",
+    description:
+      "An interactive and visually stunning portfolio template featuring an animated bento grid layout, smooth transitions, and animations – perfect for developers and designers.",
+    tags: [
+      {
+        name: "React",
+        color: "white-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "LottieFiles",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: bento,
+    source_code_link: "https://varadverse.vercel.app/",
+  },
   {
     name: "BeAesthetic (Freelance)",
     description:
