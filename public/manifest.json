@@ -1,0 +1,21 @@
+{
+  "name": "Varad Patil | Web Developer Portfolio",
+  "short_name": "Varad Portfolio",
+  "description": "Explore Varad Patil's web development portfolio showcasing his skills and projects.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#050816",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

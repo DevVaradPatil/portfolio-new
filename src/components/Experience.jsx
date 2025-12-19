@@ -34,6 +34,7 @@ const ExperienceCard = ({ experience }) => {
           <img
             src={experience.icon}
             alt={experience.company_name}
+            loading="lazy"
             className="w-[70%] h-[70%] object-contain filter drop-shadow-sm"
           />
         </div>

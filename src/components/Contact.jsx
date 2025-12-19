@@ -1,14 +1,15 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, Suspense } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { HiUser, HiMail, HiChatAlt2, HiPaperAirplane } from "react-icons/hi";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import toast from "react-hot-toast";
+
+const EarthCanvas = React.lazy(() => import("./canvas/Earth"));
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -166,7 +167,9 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
-        <EarthCanvas />
+        <Suspense fallback={null}>
+          <EarthCanvas />
+        </Suspense>
       </motion.div>
     </div>
   );

@@ -56,14 +56,14 @@ const About = () => {
       >
         Hi, I'm Varad Patil, currently pursuing my M.Tech at IIT Kanpur, where
         I'm deeply passionate about crafting innovative digital experiences. My
-        expertise lies in Web Development and Android Development, working with
-        modern technologies like React, Next.js, MERN, and React Native to build
-        scalable and user-friendly applications. I also explore the field of
-        Artificial Intelligence, integrating intelligent features into my
-        projects to create smarter, more efficient solutions. With a strong
-        foundation in full-stack development and a drive to solve real-world
-        problems, I enjoy turning ideas into impactful products that make a
-        difference.
+        expertise spans Web and Android Development, where I build scalable,
+        user-friendly applications using modern technologies like React,
+        Next.js, MERN, React Native, and native Android tools. I also explore
+        the field of Artificial Intelligence, integrating intelligent features
+        into my projects to create smarter and more efficient solutions. With a
+        strong foundation in full-stack and cross-platform development and a
+        drive to solve real-world problems, I enjoy turning ideas into impactful
+        products that truly make a difference.
       </motion.p>
       <div className="mt-10 flex flex-wrap gap-10">
         {services.map((service, index) => (

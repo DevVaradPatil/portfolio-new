@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
-
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { menu, close, logo } from "../assets";
@@ -97,6 +96,7 @@ const Navbar = () => {
         >
           <div className="relative">
             <img
+              loading="lazy"
               src={logo}
               alt="logo"
               className="w-[45px] h-[45px] object-contain transition-transform duration-300 group-hover:scale-110 rounded-full ring-2 ring-transparent group-hover:ring-theme/20"
@@ -144,7 +144,7 @@ const Navbar = () => {
           ))}
           <li>
             <a
-              href="/Varad_Resume_Aug25_Web2.pdf"
+              href="/Varad_Resume_Dec_25.pdf"
               download
               className="relative inline-flex items-center px-6 py-2.5 text-[16px] font-medium text-white bg-gradient-to-r from-theme to-theme/80 rounded-full transition-all duration-300 hover:from-theme/90 hover:to-theme/70 hover:scale-105 hover:shadow-lg hover:shadow-theme/25 group overflow-hidden"
             >
@@ -181,6 +181,7 @@ const Navbar = () => {
             aria-label="Toggle menu"
           >
             <img
+              loading="lazy"
               src={toggle ? close : menu}
               alt="menu"
               className="w-5 h-5 object-contain transition-transform duration-300"
@@ -237,7 +238,7 @@ const Navbar = () => {
                   }}
                 >
                   <a
-                    href="/Varad_Resume_Aug25_Web2.pdf"
+                    href="/Varad_Resume_Dec_25.pdf"
                     download
                     className="block w-full px-4 py-3 text-center text-white bg-gradient-to-r from-theme to-theme/80 rounded-xl font-medium transition-all duration-300 hover:from-theme/90 hover:to-theme/70 hover:scale-105 hover:shadow-lg"
                     onClick={() => setToggle(false)}

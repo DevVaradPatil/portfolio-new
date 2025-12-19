@@ -19,6 +19,7 @@ const Earth = () => {
 const EarthCanvas = () => {
   return (
     <Canvas 
+    dpr={[1, 2]}
       shadows
       frameloop='demand'
       gl={{preserveDrawingBuffer: true}}

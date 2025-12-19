@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-
+import React, { Suspense } from "react";
 import {
   About,
   Contact,
@@ -9,12 +9,12 @@ import {
   Navbar,
   Tech,
   Works,
-  StarsCanvas,
   GoToTopButton,
-  Works2,
 } from "./components";
 import MediaIcons from "./components/MediaIcons";
 import ToasterProvider from "./utils/ToasterProvider";
+
+const StarsCanvas = React.lazy(() => import("./components/canvas/Stars"));
 
 const App = () => {
   return (
@@ -30,16 +30,13 @@ const App = () => {
         <About />
         <Experience />
         <Tech />
-        <div className="hidden sm:flex">
-          <Works />
-        </div>
-        <div className="flex sm:hidden">
-          <Works2 />
-        </div>
+        <Works />
         <Feedbacks />
         <div className="relative z-0">
           <Contact />
-          <StarsCanvas />
+          <Suspense fallback={null}>
+            <StarsCanvas />
+          </Suspense>
         </div>
       </div>
     </BrowserRouter>

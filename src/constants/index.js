@@ -18,7 +18,6 @@ import {
   spotify,
   island,
   beaesthetic,
-  codesnap,
   aman,
   pghatge,
   psakhre,
@@ -30,6 +29,12 @@ import {
   android,
   ai,
   frontend,
+  framerPortfolio,
+  iitk,
+  resumeinsight,
+  android_studio,
+  flutter,
+  firebase_logo
 } from "../assets";
 
 export const navLinks = [
@@ -123,6 +128,18 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
+  {
+    name: "Android Studio",
+    icon: android_studio,
+  },
+  {
+    name: "Flutter",
+    icon: flutter,
+  },
+  {
+    name: "Firebase",
+    icon: firebase_logo,
+  },
 ];
 
 const experiences = [
@@ -165,6 +182,19 @@ const experiences = [
       "Ensured code quality and maintainability by following industry best practices and conducting thorough testing and debugging.",
     ],
   },
+  {
+    title: "M.Tech Student",
+    company_name: "Indian Institute of Technology Kanpur",
+    icon: iitk,
+    iconBg: "#383E56",
+    date: "Jul 2025 - Present",
+    points: [
+      "Pursuing M.Tech in Artificial Intelligence for Sustainability with a strong focus on applying AI techniques to real-world environmental and social challenges.",
+      "Working on advanced coursework and projects involving machine learning, deep learning, data analytics, and AI-driven decision systems.",
+      "Applying AI models to domains such as sustainability, resource optimization, and large-scale data analysis.",
+      "Engaging in research-oriented problem solving, experimentation, and collaboration with faculty and peers on cutting-edge AI applications.",
+    ],
+  },
 ];
 
 const testimonials = [
@@ -196,25 +226,25 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Frontend Toolbox",
+    name: "Resume Insight",
     description:
-      "A comprehensive collection of CSS tools and generators for developers – build gradients, shadows, grids, flex layouts, and more with real-time previews and instant copy.",
+      "An AI-powered resume analyzer that compares resumes with job descriptions and provides smart suggestions to improve ATS compatibility and overall impact.",
     tags: [
       {
-        name: "React",
+        name: "AI/NLP",
         color: "white-text-gradient",
       },
       {
-        name: "Vite",
-        color: "orange-text-gradient",
+        name: "Next.js",
+        color: "green-text-gradient",
       },
       {
-        name: "TailwindCSS",
-        color: "pink-text-gradient",
+        name: "Gemini API",
+        color: "blue-text-gradient",
       },
     ],
-    image: frontendtoolbox,
-    source_code_link: "https://frontend-toolbox-ten.vercel.app/",
+    image: resumeinsight,
+    source_code_link: "https://resumeinsight.vercel.app/",
   },
   {
     name: "Spotify 2.O",
@@ -257,6 +287,27 @@ const projects = [
     ],
     image: thinktank,
     source_code_link: "http://thinktankindia.vercel.app/",
+  },
+  {
+    name: "Frontend Toolbox",
+    description:
+      "A comprehensive collection of CSS tools and generators for developers – build gradients, shadows, grids, flex layouts, and more with real-time previews and instant copy.",
+    tags: [
+      {
+        name: "React",
+        color: "white-text-gradient",
+      },
+      {
+        name: "Vite",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: frontendtoolbox,
+    source_code_link: "https://frontend-toolbox-ten.vercel.app/",
   },
   {
     name: "Snikrz",
@@ -319,28 +370,7 @@ const projects = [
       },
     ],
     image: beaesthetic,
-    source_code_link: "https://www.beaesthetic.co.in/",
-  },
-  {
-    name: "CodeSnap",
-    description:
-      "Streamline your coding experience with CodeSnap, a Next.js-based snippet generator that seamlessly integrates functionality and efficiency for all your development needs.",
-    tags: [
-      {
-        name: "Next.js",
-        color: "gray-text-gradient",
-      },
-      {
-        name: "Shadcn",
-        color: "white-text-gradient",
-      },
-      {
-        name: "UI/UX",
-        color: "light-pink-text-gradient ",
-      },
-    ],
-    image: codesnap,
-    source_code_link: "https://codesnap.web.app/",
+    source_code_link: "https://beaesthetic.co.in/",
   },
   {
     name: "3D Portfolio",
@@ -362,6 +392,27 @@ const projects = [
     ],
     image: island,
     source_code_link: "https://varad-dev-island.vercel.app/",
+  },
+  {
+    name: "Animated Portfolio",
+    description:
+      "A visually engaging animated portfolio built with Framer, showcasing personal projects, skills, and interactive design elements in a sleek and modern layout.",
+    tags: [
+      {
+        name: "Framer",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Motion Design",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "Portfolio",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: framerPortfolio,
+    source_code_link: "https://varadpatil.framer.website/",
   },
 ];
 
